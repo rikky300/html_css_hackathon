@@ -1,0 +1,26 @@
+{
+  "name": "progate_school",
+  "license": "SEE LICENSE IN LICENSE",
+  "type":"module",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "NODE_OPTIONS=\"--experimental-vm-modules --no-warnings\" jest __tests__/image_compare.test.js",
+    "start": "http-server docs/"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-puppeteer": "^11.0.0",
+    "puppeteer": "^24.2.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.33.5"
+  },
+  "overrides": {
+    "glob": "11.0.1"
+  }
+}
